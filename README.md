@@ -1,4 +1,5 @@
 # GrowTrack - Open Source Cannabis Seed-to-Sale Tracking System
+![Screenshot 2025-05-30 at 1 41 25 PM](https://github.com/user-attachments/assets/2c122fa7-69ea-40bf-8366-42ed2591aa0d)
 
 GrowTrack is a free, open-source seed-to-sale tracking system designed specifically for California cannabis businesses. Built to provide a transparent, cost-effective alternative to traditional tracking systems, GrowTrack helps cultivators, manufacturers, and distributors maintain compliance while reducing operational costs.
 
