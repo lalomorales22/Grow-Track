@@ -53,6 +53,8 @@ const FaqItem: React.FC<{ question: string; answer: string }> = ({ question, ans
 
 
 const GrowTrackLanding: React.FC = () => {
+  const githubRepoUrl = "https://github.com/lalomorales22/Grow-Track";
+
   const problemSolutionFeatures = [
     {
       icon: AlertTriangle,
@@ -126,14 +128,14 @@ const GrowTrackLanding: React.FC = () => {
       bgColor: 'bg-primary-100',
     },
     {
-      icon: Layers, // Represents data integrity and validation layers
+      icon: Layers,
       title: 'Uncompromising Data Integrity',
       description: 'Proactive data validation at the point of entry minimizes errors, ensuring accurate, reliable data for compliance and business insights.',
       color: 'text-primary-700',
       bgColor: 'bg-primary-100',
     },
     {
-      icon: BarChartBig, // Represents User-centric design and analytics
+      icon: BarChartBig,
       title: 'User-Centric Design',
       description: 'Intuitive, accessible, and mobile-responsive interface designed for ease of use, even for non-technical team members. Clear reporting and analytics.',
       color: 'text-primary-700',
@@ -213,7 +215,7 @@ const GrowTrackLanding: React.FC = () => {
                 </a>
               ))}
                <a
-                href="https://github.com/your-repo/growtrack" // Replace with actual GitHub link
+                href={githubRepoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -227,13 +229,12 @@ const GrowTrackLanding: React.FC = () => {
                 Log In
               </Link>
               <Link
-                to="/login" // Or a specific sign-up/download page
+                to="/login"
                 className="bg-white text-primary-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary-50 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
               >
                 Get Started
               </Link>
             </div>
-             {/* Mobile menu button (optional, add if needed) */}
           </div>
         </nav>
 
@@ -249,7 +250,7 @@ const GrowTrackLanding: React.FC = () => {
           <div className="mt-8 max-w-md mx-auto sm:flex sm:justify-center md:mt-10 space-y-4 sm:space-y-0 sm:space-x-4">
             <div className="rounded-md shadow">
               <Link
-                to="/login" // Or download/GitHub
+                to="/login"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 md:py-4 md:text-lg md:px-10 transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Get Started Free <ArrowRight className="ml-2 h-5 w-5" />
@@ -257,7 +258,7 @@ const GrowTrackLanding: React.FC = () => {
             </div>
             <div className="rounded-md shadow">
               <a
-                href="https://github.com/your-repo/growtrack" // Replace with actual GitHub link
+                href={githubRepoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-700 hover:bg-primary-600 md:py-4 md:text-lg md:px-10 transition-all duration-300 ease-in-out transform hover:scale-105"
@@ -267,7 +268,6 @@ const GrowTrackLanding: React.FC = () => {
             </div>
           </div>
         </div>
-         {/* Decorative background elements */}
         <div className="absolute inset-0 overflow-hidden opacity-20">
             <Leaf className="absolute text-primary-500 opacity-30 h-64 w-64 -top-10 -left-20 transform rotate-12" />
             <Leaf className="absolute text-primary-500 opacity-20 h-96 w-96 bottom-0 -right-20 transform -rotate-12" />
@@ -395,7 +395,7 @@ const GrowTrackLanding: React.FC = () => {
           </p>
           <div className="mt-10">
             <a
-              href="https://github.com/your-repo/growtrack" // Replace with actual GitHub link
+              href={githubRepoUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-semibold rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -417,13 +417,13 @@ const GrowTrackLanding: React.FC = () => {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <a
-              href="mailto:info@growtrack.org" // Replace with actual contact email
+              href="mailto:info@growtrack.org"
               className="inline-flex items-center px-6 py-3 border border-primary-600 text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 hover:text-primary-800 transition-colors shadow-sm hover:shadow-md"
             >
               <Mail className="mr-2 h-5 w-5" /> Email Us
             </a>
             <a
-              href="#" // Replace with link to community forum/Discord if available
+              href="#"
               className="inline-flex items-center px-6 py-3 border border-primary-600 text-base font-medium rounded-md text-primary-700 bg-white hover:bg-primary-50 hover:text-primary-800 transition-colors shadow-sm hover:shadow-md"
             >
               <MessageSquare className="mr-2 h-5 w-5" /> Join Community Forum
@@ -442,7 +442,7 @@ const GrowTrackLanding: React.FC = () => {
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <Link
-                to="/login" // Or download/GitHub
+                to="/login"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-800 bg-white hover:bg-primary-50 transition-colors"
               >
                 Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
@@ -457,7 +457,7 @@ const GrowTrackLanding: React.FC = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex justify-center space-x-6 md:order-2">
-               <a href="https://github.com/your-repo/growtrack" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+               <a href={githubRepoUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                 <span className="sr-only">GitHub</span>
                 <Github className="h-6 w-6" />
               </a>
@@ -465,7 +465,6 @@ const GrowTrackLanding: React.FC = () => {
                 <span className="sr-only">Email</span>
                 <Mail className="h-6 w-6" />
               </a>
-              {/* Add other social links here if needed */}
             </div>
             <div className="mt-8 md:mt-0 md:order-1">
                 <Link to="/" className="flex items-center justify-center md:justify-start space-x-2">
