@@ -35,9 +35,9 @@ const FaqItem: React.FC<{ question: string; answer: string }> = ({ question, ans
           <span className="text-lg font-medium">{question}</span>
           <span className="ml-6 flex h-7 items-center">
             {isOpen ? (
-              <ChevronUp className="h-6 w-6" aria-hidden="true" />
+              <ChevronUp className="h-6 w-6\" aria-hidden="true" />
             ) : (
-              <ChevronDown className="h-6 w-6" aria-hidden="true" />
+              <ChevronDown className="h-6 w-6\" aria-hidden="true" />
             )}
           </span>
         </button>
