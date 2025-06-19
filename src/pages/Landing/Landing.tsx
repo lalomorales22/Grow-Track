@@ -19,7 +19,8 @@ import {
   ChevronDown,
   ChevronUp,
   Eye,
-  Wrench
+  Wrench,
+  ExternalLink
 } from 'lucide-react';
 
 // Helper component for FAQ items
@@ -199,7 +200,7 @@ const GrowTrackLanding: React.FC = () => {
 
 
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 relative">
       {/* Header & Hero Section */}
       <header className="bg-primary-900 relative overflow-hidden" id="home">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 z-10 relative">
@@ -481,6 +482,20 @@ const GrowTrackLanding: React.FC = () => {
           </p>
         </div>
       </footer>
+
+      {/* Built with Bolt Badge */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <a
+          href="https://bolt.new"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:from-blue-700 hover:to-purple-700"
+        >
+          <Zap className="h-4 w-4 mr-2" />
+          Built with Bolt
+          <ExternalLink className="h-3 w-3 ml-1 opacity-75" />
+        </a>
+      </div>
     </div>
   );
 };
